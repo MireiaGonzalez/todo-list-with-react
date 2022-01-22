@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import propTypes from "prop-types";
 
@@ -8,16 +8,23 @@ const TodosCard = (props) => {
 			<div
 				id="card-header"
 				className="card-header container-fluid d-flex flex-row justify-content-center align-items-center">
-				<input id="input-todo" type="text" className="form-control " />
+				<input
+					id="input-todo"
+					type="text"
+					className="form-control"
+					onChange={props.change}
+					onKeyPress={props.keypress}
+					value={props.inputValue}
+				/>
 				<select
+					defaultValue={"default"}
 					id="select-type"
-					class="form-select"
+					className="form-select"
 					aria-label="Default select example">
 					<option
 						id="selected-option"
-						value=""
+						value="default"
 						disabled
-						selected
 						hidden>
 						Select Type
 					</option>
@@ -37,13 +44,20 @@ const TodosCard = (props) => {
 					EMPTY! ADD SOME TODOS
 				</span>
 			</div>
+			<div id="todos-print">
+				<ul class="list-group list-group-flush">{props.todos}</ul>
+			</div>
 		</div>
 	);
 };
 
-TodosCard.PropTypes = {
+TodosCard.propTypes = {
 	todo: propTypes.string,
 	visibility: propTypes.string,
+	change: propTypes.func,
+	todos: propTypes.string,
+	keypress: propTypes.func,
+	inputValue: propTypes.string,
 };
 
 export default TodosCard;
