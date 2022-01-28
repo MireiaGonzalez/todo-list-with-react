@@ -1,5 +1,5 @@
 #header{
-    color: #7C99AC;
+    color: #286d68;
     margin-top: 2%;
     margin-bottom: 2%;
 }
@@ -7,35 +7,38 @@
 #card{
     min-height: 30rem;
     margin-bottom: 5%;
-    box-shadow: 0px 0px 10px #D3DEDC;
+    box-shadow: 0px 0px 3px #a4f9ff;
 }
 #card-header{
-    background-color: #FFEFEF;
+    background-color: #8ad4c8;
 }
 
 #input-todo{
     margin-right: 0.5%;
-   
 }
 #input-todo:focus{
-    border: 3px solid #FFEFEF;
+    border: 1px solid #8ad4c8;
     box-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 #input-todo:hover{
     height: 2rem;
 }
+#add-todo-button{
+    margin-left: 0.5%;
+    width: 10rem;
+}
 
 
 #select-type{
-    width: 50%;
+    width: 25%;
 }
 #select-type:focus{
-    border: 3px solid #FFEFEF;
+    border: 1px solid #8ad4c8;
     box-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
 #empty-card{
-    color: #b3b3b3;
+    color: #62625E;
     margin: 15%;
 }
 
@@ -58,5 +61,5 @@
 }
 
 li:hover{
-    background-color: rgb(255, 244, 244);
+    background-color: #ebfffc;
 }

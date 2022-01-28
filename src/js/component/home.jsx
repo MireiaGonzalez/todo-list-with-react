@@ -40,8 +40,7 @@ const Home = () => {
 							defaultValue={"default"}
 							id="select-type"
 							className="form-select"
-							aria-label="Default select example"
-							required>
+							aria-label="Default select example">
 							<option
 								id="selected-option"
 								value="default"
@@ -61,6 +60,12 @@ const Home = () => {
 								Standard
 							</option>
 						</select>
+						<button
+							id="add-todo-button"
+							type="button"
+							class="btn btn-primary">
+							Add
+						</button>
 					</div>
 
 					{allTodos.length > 0 ? (

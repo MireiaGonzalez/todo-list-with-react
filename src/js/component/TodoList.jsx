@@ -6,7 +6,9 @@ const TodoList = (props) => {
 		<li
 			id={props.index}
 			className="list-group-item d-flex justify-content-between">
-			{props.todo}
+			<div className={props.color}>
+				<strong>{props.todo}</strong>
+			</div>
 			{props.deleteButton}
 		</li>
 	);
@@ -15,6 +17,7 @@ const TodoList = (props) => {
 TodoList.propTypes = {
 	index: PropTypes.number,
 	todo: PropTypes.string,
+	color: PropTypes.string,
 };
 
 export default TodoList;
