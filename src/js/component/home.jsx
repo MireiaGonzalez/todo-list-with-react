@@ -201,7 +201,7 @@ const Home = () => {
 				</div>
 				<small className="d-flex justify-content-center">
 					Urgent: {Number(urgentTodos.length)} | Important:{" "}
-					{Number(importantTodos.length)} | Finished Tasks{" "}
+					{Number(importantTodos.length)} | Finished Tasks:{" "}
 					{Number(finishedTodos.length)}
 				</small>
 			</div>
