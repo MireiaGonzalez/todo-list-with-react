@@ -6,7 +6,7 @@
 
 #card{
     min-height: 30rem;
-    margin-bottom: 5%;
+    margin-bottom: 0%;
     box-shadow: 0px 0px 3px #a4f9ff;
 }
 #card-header{
@@ -27,6 +27,12 @@
     margin-left: 0.5%;
     width: 10rem;
 }
+.list-group-item:hover{
+    background-color: #ebfffc;
+}
+.btn-success{
+    margin-right: 1em;
+}
 
 
 #select-type{
@@ -36,11 +42,20 @@
     border: 1px solid #8ad4c8;
     box-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
+.not-selected{
+    background-color: rgb(255, 215, 215);
+}
 
 #empty-card{
     color: #62625E;
     margin: 15%;
 }
+
+.finished-tasks{
+    padding: 1%;
+}
+
+
 
 
 .trash{
@@ -57,9 +72,9 @@
     color: red;
 }
 .important{
-    color: rgb(226, 226, 0);
+    color: rgb(0, 17, 255);
+}
+.checkbox{
+    margin-right: 1rem;
 }
 
-li:hover{
-    background-color: #ebfffc;
-}

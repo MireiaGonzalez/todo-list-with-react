@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types";
+import Proptypes from "prop-types";
 
 const DeleteButton = (props) => {
 	return (
@@ -8,14 +8,16 @@ const DeleteButton = (props) => {
 				src="https://cdn-icons.flaticon.com/png/512/3303/premium/3303151.png?token=exp=1643061283~hmac=44f867b5eafa916d0ce750a778ca3938"
 				alt="delete"
 				className="trash"
-				onClick={props.deleteTodo}
+				onClick={props.removeTodo}
+				id={props.idDeleteNum}
 			/>
 		</div>
 	);
 };
 
-DeleteButton.propTypes = {
-	deleteTodo: PropTypes.func,
+DeleteButton.proptypes = {
+	removeTodo: Proptypes.func,
+	idDeleteNum: Proptypes.number,
 };
 
 export default DeleteButton;
